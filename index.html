@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Model Form</title>
+</head>
+<body>
+    <h1 id="title">FreeCodeCamp Modelo de Formulário</h1>
+    <p id="description">Obrigado por tirar um tempo para melhorar nosso serviço</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">Name <input type="text" id="name" placeholder="Digite seu nome" required></label>
+            <label for="email" id="email-label">Email <input type="email" id="email" placeholder="Digite seu email" required></label>
+            <label for="number" id="number-label">Idade <input type="number" id="number" placeholder="opcional" min="13" max="123"></label>
+        </fieldset>
+        <fieldset>
+            <select id="dropdown">
+                <option value="" name="select">selecione uma opção</option>
+                <option value="1" name="aluno">aluno</option>
+                <option value="2" name="trab">trabalho em tempo integral</option>
+                <option value="3" name="estud">estudo em tempo integral</option>
+                <option value="4" name="prefir">prefiro não dizer</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <label for="definitivamente"><input type="radio" name="indication" id="definitivamente" value="empresas" checked> Definitivamente</label>
+            <label for="pode-ser"><input type="radio" name="indication" id="pode-ser" value="autonomo"> Pode ser</label>
+            <label for="nao-certeza"><input type="radio" name="indication" id="nao-certeza" value="autonomos"> Não tenho certeza</label>
+        </fieldset>
+        <fieldset>
+            <label for="check-1"><input type="checkbox" id="check-1" value="project-front"> Projetos front-end</label>
+            <label for="check-2"><input type="checkbox" id="check-2" value="project-back"> Projetos back-end</label>
+            <label for="check-3"><input type="checkbox" id="check-3" value="vizu-dados"> Vizualização de dados</label>
+            <label for="check-4"><input type="checkbox" id="check-4" value="desafios"> Desafios</label>
+            <label for="check-5"><input type="checkbox" id="check-5" value="comunidade"> Comunidade de código aberto</label>
+            <label for="check-6"><input type="checkbox" id="check-6" value="gitter"> Salas de ajuda Gitter</label>
+            <label for="check-7"><input type="checkbox" id="check-7" value="videos"> Videos</label>
+            <label for="check-8"><input type="checkbox" id="check-8" value="enc-cidade"> Encontros da Cidade</label>
+            <label for="check-9"><input type="checkbox" id="check-9" value="wiki"> Wiki</label>
+            <label for="check-10"><input type="checkbox" id="check-10" value="forum"> Fórum</label>
+            <label for="check-11"><input type="checkbox" id="check-11" value="curso-add"> Cursos adicionais</label>
+        </fieldset>
+        <fieldset>
+            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+        </fieldset>
+        <input type="submit" id="submit" value="Submit">
+    </form>
+</body>
+</html>
